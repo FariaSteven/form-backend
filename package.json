@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FariaSteven/boilerplate-graphql.git",
+  "author": "Steven Faria Gusmão <steven@grupoeureka.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "6.6.1",
+    "@graphql-tools/merge": "8.3.11",
+    "apollo-server": "^3.11.1",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.7.2"
+  }
+}
