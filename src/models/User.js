@@ -1,19 +1,47 @@
 import mongoose from 'mongoose';
 
 const Schema = new mongoose.Schema({
-	firstName: {
+	name: {
 		type: String,
 		required: true,
 	},
-	lastName: {
+	celphone: {
 		type: String,
 		required: true,
 	},
-	email: String,
-	active: {
-		type: Boolean,
+	cpf: {
+		type: String,
+		required: true,
+	},
+	cep: {
+		type: String,
+		required: true,
+	},
+	neighborhood: {
+		type: String,
+		required: true,
+	},
+	street: {
+		type: String,
+		required: true,
+	},
+	city: {
+		type: String,
+		required: true,
+	},
+	email: {
+		type: String,
+		required: true,
+	},
+	password: {
+		type: String,
+		required: true,
+	},
+	languages: {
+		type: [String],
 		required: true,
 	},
 });
 
 export default mongoose.model('User', Schema)
+

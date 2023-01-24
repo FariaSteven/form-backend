@@ -1,16 +1,28 @@
 type User {
   _id: ID!
-  firstName: String!
-  lastName: String!
-  email: String
-  active: Boolean!
+  name: String!
+  celphone: String!
+  cpf: String!
+  cep: String!
+  neighborhood: String!
+  street: String!
+  city: String!
+  email: String!
+  password: String!
+  languages: [String!]!
 }
 
 input UserInput {
-  firstName: String!
-  lastName: String!
-  email: String
-  active: Boolean!
+  name: String!
+  celphone: String!
+  cpf: String!
+  cep: String!
+  neighborhood: String!
+  street: String!
+  city: String!
+  email: String!
+  password: String!
+  languages: [String!]!
 }
 
 type Query {
@@ -23,3 +35,14 @@ type Mutation {
   updateUser(id: ID!, data: UserInput!): User!
   deleteUser(id: ID!): Boolean
 }
+
+# name: "Steven Faria Gusmão",
+# celphone: "11977747335",
+# cpf: "44887806876",
+# cep: "07991170",
+# neighborhood: "neig",
+# street: "stree",
+# city: "cit",
+# email: "teste@teste.com",
+# password: "123456",
+# languages: ["ReactJS", "NodeJS", "MongoDB"],
