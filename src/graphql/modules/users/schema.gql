@@ -1,3 +1,13 @@
+type Languages {
+  value: String!
+  label: String!
+}
+
+input LanguagesInput {
+  value: String!
+  label: String!
+}
+
 type User {
   _id: ID!
   name: String!
@@ -9,7 +19,7 @@ type User {
   city: String!
   email: String!
   password: String!
-  languages: [String!]!
+  languages: [Languages]!
 }
 
 input UserInput {
@@ -22,7 +32,7 @@ input UserInput {
   city: String!
   email: String!
   password: String!
-  languages: [String!]!
+  languages: [LanguagesInput]!
 }
 
 type Query {

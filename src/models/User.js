@@ -37,10 +37,11 @@ const Schema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	languages: {
-		type: [String],
-		required: true,
-	},
+	languages: [{
+		value: { type: String, required: true, },
+		label: { type: String, required: true, }
+	}],
+	
 });
 
 export default mongoose.model('User', Schema)
